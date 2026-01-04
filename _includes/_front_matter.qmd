@@ -1,0 +1,21 @@
+---
+title: |
+    <p>![](style/mgmss_symbol_color.png){width=40px}</p>
+    Einführung in HTML
+subtitle: 'Die Sprache der Web Inhalte<br><small>Lerninhalte</small>'
+date: 2025-12-08 
+date-modified: 2025-01-04
+author: Călin Aurel Drăgan
+abstract: 'Moderne Webseiten beinhalten eine Menge verschiedener Elemente. Jedes dieser Elemente und die Art und Weise wie diese zusammenhängen wird durch HTML beschrieben. Dadurch ist HTML die erste Technologie, die Du zur Erstellung von Webseiten lernst. Dieses Dokument erlaubt Dir, die Grundlagen von HTML kennenzulernen. Diese solltest Du als Startbrett benutzen und Dein Wissen eigenständig ausbauen.'
+# bibliography: references.bib
+format: 
+    csdoc-html:
+        css: style/_style.css
+        include-in-header: _includes/_in_header.html
+        # include-after-body: _includes/_after_body.html
+        embed-resources: false
+        self-contained-math: false
+filters:
+  - highlight-text
+  - line-highlight
+---

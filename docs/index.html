@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Călin Aurel Drăgan">
+
+<title>quarto-input9c17adb347db558</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="index_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="index_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-46eeb4c476de49ef7df495821a6125d9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark-2e0ab3ffcb189ca14a0af92b40aeab37.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-46eeb4c476de49ef7df495821a6125d9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap-3425cfae6db2005cddf489447706abcd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/bootstrap/bootstrap-dark-3425cfae6db2005cddf489447706abcd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/bootstrap/bootstrap-3425cfae6db2005cddf489447706abcd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/quarto-contrib/line-highlight-1.0.0/line-highlight.css" rel="stylesheet">
+<script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.23/dist/contrib/mhchem.min.js" integrity="sha384-F2ptQFZqNJuqfGGl28mIXyQ5kXH48spn7rcoS0Y9psqIKAcZPLd1NzwFlm/bl1mH" crossorigin="anonymous"></script>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="style/_style.css">
+</head>
+
+<body class="quarto-light">
+
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title"><p>
+<img src="style/mgmss_symbol_color.png" class="img-fluid" width="40">
+</p>
+<p>Einführung in HTML</p></h1>
+            <p class="subtitle lead">Die Sprache der Web Inhalte<br><small>Lerninhalte</small></p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Autor:in</div>
+      <div class="quarto-title-meta-contents">
+               <p>Călin Aurel Drăgan </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Veröffentlichungsdatum</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">8. Dezember 2025</p>
+      </div>
+    </div>
+    
+      <div>
+      <div class="quarto-title-meta-heading">Geändert</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">4. Januar 2025</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  <div>
+    <div class="abstract">
+      <div class="block-title">Zusammenfassung</div>
+      Moderne Webseiten beinhalten eine Menge verschiedener Elemente. Jedes dieser Elemente und die Art und Weise wie diese zusammenhängen wird durch HTML beschrieben. Dadurch ist HTML die erste Technologie, die Du zur Erstellung von Webseiten lernst. Dieses Dokument erlaubt Dir, die Grundlagen von HTML kennenzulernen. Diese solltest Du als Startbrett benutzen und Dein Wissen eigenständig ausbauen.
+    </div>
+  </div>
+  
+  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#was-ist-das-html" id="toc-was-ist-das-html" class="nav-link active" data-scroll-target="#was-ist-das-html"><span class="header-section-number">1</span> Was ist das, HTML?</a>
+  <ul>
+  <li><a href="#erklärung" id="toc-erklärung" class="nav-link" data-scroll-target="#erklärung"><span class="header-section-number">1.1</span> Erklärung</a></li>
+  <li><a href="#unterstützung-durch-andere-sprachen" id="toc-unterstützung-durch-andere-sprachen" class="nav-link" data-scroll-target="#unterstützung-durch-andere-sprachen"><span class="header-section-number">1.2</span> Unterstützung durch andere Sprachen</a></li>
+  </ul></li>
+  <li><a href="#syntax" id="toc-syntax" class="nav-link" data-scroll-target="#syntax"><span class="header-section-number">2</span> Syntax</a></li>
+  <li><a href="#tags" id="toc-tags" class="nav-link" data-scroll-target="#tags"><span class="header-section-number">3</span> Tags</a>
+  <ul>
+  <li><a href="#paartags" id="toc-paartags" class="nav-link" data-scroll-target="#paartags"><span class="header-section-number">3.1</span> Paartags</a></li>
+  <li><a href="#verschachtlung" id="toc-verschachtlung" class="nav-link" data-scroll-target="#verschachtlung"><span class="header-section-number">3.2</span> Verschachtlung</a></li>
+  <li><a href="#attribute" id="toc-attribute" class="nav-link" data-scroll-target="#attribute"><span class="header-section-number">3.3</span> Attribute</a></li>
+  <li><a href="#einfachtags" id="toc-einfachtags" class="nav-link" data-scroll-target="#einfachtags"><span class="header-section-number">3.4</span> Einfachtags</a></li>
+  </ul></li>
+  <li><a href="#programmierstil" id="toc-programmierstil" class="nav-link" data-scroll-target="#programmierstil"><span class="header-section-number">4</span> Programmierstil</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<!-- Initialize Fontawesome with any icon {{< fa thumbs-up >}} -->
+<div class="hidden">
+<!-- Groundwork -->
+<p><span class="math display">
+\gdef\sub#1{_{\mathrm{#1}}}
+\gdef\unit#1{\mathrm{#1}}
+</span> <!-- Physical units --> <span class="math display">
+\gdef\celsius{\unit{°C}}
+\gdef\joule{\unit{J}}
+\gdef\kelvin{\unit{K}}
+\gdef\kilogram{\unit{kg}}
+\gdef\liter{\unit{L}}
+\gdef\milliliter{\unit{mL}}
+\gdef\meter{\unit{m}}
+\gdef\mole{\unit{mol}}
+\gdef\newton{\unit{N}}
+\gdef\pascal{\unit{Pa}}
+</span> <!-- Exponentiated units --> <span class="math display">
+\gdef\squaremeter{\meter^2}
+\gdef\cubicmeter{\meter^3}
+</span> <!-- Combined physical units --> <span class="math display">
+\gdef\newtonperkilogram{\frac{\newton}{\kilogram}}
+\gdef\joulepermole{\frac{\joule}{\mole}}
+\gdef\jouleperkilogram{\frac{\joule}{\kilogram}}
+\gdef\jouleperkelvin{\frac{\joule}{\kelvin}}
+\gdef\jouleperkilogramperkelvin{\frac{\joule}{\kilogram\,\kelvin}}
+\gdef\joulepermoleperkelvin{\frac{\joule}{\mole\,\kelvin}}
+</span></p>
+</div>
+<div class="hidden">
+
+</div>
+<section id="was-ist-das-html" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="was-ist-das-html"><span class="header-section-number">1</span> Was ist das, HTML?</h2>
+<p>Die formale Sprache HTML steht für die englische Wörter <strong>H</strong>yper<strong>t</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage. Zieh Dir die Erklärung jedes Wortes rein, welches diese schöne und weltbewegende Abkürzung HTML schmückt.</p>
+<section id="erklärung" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="erklärung"><span class="header-section-number">1.1</span> Erklärung</h3>
+<p><em>Hypertext</em> bedeutet ein Text, dass durch Querverweise mit anderen Texten verbunden wird. <em>Markup</em> kommt vom englischen <em>to mark up</em>, was wortwörtlich markieren heisst. Das Markieren, welches hier allerdings gemeint ist, ist das Markieren von Manuskripten im Verlagsgeschäft. Das Markieren von Manuskripten wurde vom Schriftsetzer und anderen funktionalen Verlagsmitarbeiter benutzt. Das war eine sehr kondensierte und abgekürzte Kommentare und Symbolen, die dem einfachen Manuskript die notwendigen Stilemente anhing. <em>Language</em> ist die Sprache; hier wiederum handelt es sich um eine formale Programmiersprache.</p>
+<p>Eine <em>Markup Language</em> ist also eine Programmiersprache, die die Teile eines Dokuments und die gegenseitigen Beziehungen der Teile zueinander beschreibt. Diese Beschreibung nennen wir <strong>deskriptiv semantisch</strong>, weil die einzelnen Teile nach ihrer Bedeutung benannt werden. Das bedeuten, der Code steht unmittelbar für das was an der Stelle gezeigt werden soll. Deskriptiv heisst, dass HTML ein reine beschreibende Sprache ist.</p>
+</section>
+<section id="unterstützung-durch-andere-sprachen" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="unterstützung-durch-andere-sprachen"><span class="header-section-number">1.2</span> Unterstützung durch andere Sprachen</h3>
+<p>Da HTML lediglich die Struktur einer Web Ressource wie eine Webseite beschreibt, wird sie auf der Darstellungsseite durch die ebenfalls deklarative Programmiersprache <strong>Cascading Style Sheets</strong>, <strong>CSS</strong> unterstützt. Auf dem Client läuft darüber hinaus für die Bereitstellung von Logik die vollwertige Programmiersprache <strong>Javascript</strong> ab.</p>
+</section>
+</section>
+<section id="syntax" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="syntax"><span class="header-section-number">2</span> Syntax</h2>
+<p>Die Syntax einer Programmiersprache ist ähnlich zu sehen, wie der korrekte Satzbau in der Grammatik einer Sprache. Dadurch, dass Programmiersprachen jedoch kontextfrei sind, ist deren Syntax sehr einfach. Das heisst nicht, dass es nicht genügend Möglichkeiten gibt, wie man sich selber in den Fuss schiesst. Selbst für eine kontextfreie Sprache, brauchst Du etwas Disziplin, um sie korrekt schreiben zu können.</p>
+<p>Die Programmiersprache HTML beschreibt durch HTML Elementen die verschiedenen semantischen Elemente einer Web Ressource. Um ein HTML Element anzugeben, benutzt man einen Tag. Ein tag ist wie ein Etikett, dass ein bestimmtes Element anzeigt. In den folgenden Abschnitte lernst Du einige Syntaxaspekte von HTML kennen.</p>
+<p>Viele der nachfolgenden Codebeispiele lassen sich kopieren und in sogenannte Livecoding Umgebungen im WWW verwenden. Eine dieser Livecoding Umgebungen ist zum Beispiel: <a href="https://developer.mozilla.org/en-US/play" class="uri">https://developer.mozilla.org/en-US/play</a>.</p>
+</section>
+<section id="tags" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="tags"><span class="header-section-number">3</span> Tags</h2>
+<p>Die Tags sind die semantischen Namen von HTML Elementen einer Web Ressource. Es gibt zwei grundsätzliche Arten von Tags. Eine einfache Quelle zur Erklärung der einzelnen Tags ist <a href="https://en.wikipedia.org/wiki/HTML_element#Comments" class="uri">https://en.wikipedia.org/wiki/HTML_element#Comments</a>. Die deutsche Variante ist sehr knapp gehalten.</p>
+<section id="paartags" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="paartags"><span class="header-section-number">3.1</span> Paartags</h3>
+<p>Die Struktur eines Paartags ist folgendermassen:</p>
+<div id="lst-html-tags" class="html listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-html-tags-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Listing&nbsp;1: Grundstruktur eines HTML Elements
+</figcaption>
+<div aria-describedby="lst-html-tags-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-code-line-numbers=""><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">tag</span><span class="dt">&gt;</span> ... <span class="dt">&lt;/</span><span class="kw">tag</span><span class="dt">&gt;</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</figure>
+</div>
+<p>Hierbei kannst Du <code>tag</code> durch einen konformen Tagnamen ersetzen und die <code>...</code> innerhalb des Tags stehen stellvertretend für den Inhalt. Dadurch zerfallen viele HTML Tags in einem Anfangs- und einem Endtag. Zum Beispiel wird ein Textabsatz in HTML mit dem Tagnamen <code>p</code> bezeichnet. Das wäre also</p>
+<div id="lst-html-tags" class="html listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-html-tags-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Listing&nbsp;2: Ein Textabsatz in HTML trägt den Tagnamen <code>p</code>.
+</figcaption>
+<div aria-describedby="lst-html-tags-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" data-code-line-numbers=""><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span> Inhalt des Absatzes kommt zwischen dem Anfangs und dem Endtag. <span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</figure>
+</div>
+<p>Paartags können zwischen dem Anfangs- und dem Endtag einen Inhalt haben; sie müssen aber nicht.</p>
+</section>
+<section id="verschachtlung" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="verschachtlung"><span class="header-section-number">3.2</span> Verschachtlung</h3>
+<p>Paartags können ineinander verschachtelt werden. Die allgemeine Struktur von verschachtelten Paartags sieht so aus</p>
+<div id="lst-tag-nesting" class="html listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-tag-nesting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Listing&nbsp;3: Grundstruktur zweier verschachtelter HTML Elemente
+</figcaption>
+<div aria-describedby="lst-tag-nesting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" data-code-line-numbers=""><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">tag1</span><span class="dt">&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">tag2</span><span class="dt">&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        ...</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;/</span><span class="kw">tag2</span><span class="dt">&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">tag2</span><span class="dt">&gt;</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</figure>
+</div>
+<p>Dabei wird <code>tag1</code> als äusseres Tag bezeichnet, das ein Elternelement darstellt. Dadurch wird <code>tag2</code> zu einem inneren Tag und stellt ein Kindelement dar. Die HTML Tabelle ist ein gutes Beispiel für verschachtelte Tags.</p>
+<div id="lst-table" class="html listing quarto-float quarto-figure quarto-figure-left anchored" data-code-line-numbers="true">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-table-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Listing&nbsp;4: Die Grundstruktur einer einfachen HTML Tabelle. Die HTML Tabelle besteht aus verschachtelten Elementen, die jeweils aus vielen Paartags bestehen.
+</figcaption>
+<div aria-describedby="lst-table-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" data-code-line-numbers=""><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1"></a><span class="dt">&lt;</span><span class="kw">table</span><span class="dt">&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>    <span class="dt">&lt;</span><span class="kw">caption</span><span class="dt">&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a>        Überschrift der Tabelle</span>
+<span id="cb4-4"><a href="#cb4-4"></a>    <span class="dt">&lt;/</span><span class="kw">caption</span><span class="dt">&gt;</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a>    <span class="dt">&lt;</span><span class="kw">thead</span><span class="dt">&gt;</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a>        <span class="dt">&lt;</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a>            <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Person<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a>            <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Interessiert sich für<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a>            <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Alter<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a>        <span class="dt">&lt;/</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a>    <span class="dt">&lt;/</span><span class="kw">thead</span><span class="dt">&gt;</span></span>
+<span id="cb4-12"><a href="#cb4-12"></a>    <span class="dt">&lt;</span><span class="kw">tbody</span><span class="dt">&gt;</span></span>
+<span id="cb4-13"><a href="#cb4-13"></a>        <span class="dt">&lt;</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb4-14"><a href="#cb4-14"></a>            <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Chris<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb4-15"><a href="#cb4-15"></a>            <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Disney+<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb4-16"><a href="#cb4-16"></a>            <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>15<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb4-17"><a href="#cb4-17"></a>        <span class="dt">&lt;/</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb4-18"><a href="#cb4-18"></a>        <span class="dt">&lt;</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb4-19"><a href="#cb4-19"></a>            <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Manu<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb4-20"><a href="#cb4-20"></a>            <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Matchweiss<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb4-21"><a href="#cb4-21"></a>            <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>16<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb4-22"><a href="#cb4-22"></a>        <span class="dt">&lt;/</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb4-23"><a href="#cb4-23"></a>        <span class="dt">&lt;</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb4-24"><a href="#cb4-24"></a>            <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Fauli<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb4-25"><a href="#cb4-25"></a>            <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>Nix<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb4-26"><a href="#cb4-26"></a>            <span class="dt">&lt;</span><span class="kw">td</span><span class="dt">&gt;</span>14<span class="dt">&lt;/</span><span class="kw">td</span><span class="dt">&gt;</span></span>
+<span id="cb4-27"><a href="#cb4-27"></a>        <span class="dt">&lt;/</span><span class="kw">tr</span><span class="dt">&gt;</span></span>
+<span id="cb4-28"><a href="#cb4-28"></a>    <span class="dt">&lt;/</span><span class="kw">tbody</span><span class="dt">&gt;</span></span>
+<span id="cb4-29"><a href="#cb4-29"></a><span class="dt">&lt;/</span><span class="kw">table</span><span class="dt">&gt;</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</figure>
+</div>
+<p>Das <code>table</code> tag umfasst die gesamte Tabelle mit einem Starttag in Zeile 1 und dem entsprechenden Endtag in der letzten Zeile. Die weiteren Paartags sind</p>
+<ul>
+<li><code>caption</code>: Überschrift</li>
+<li><code>thead</code>: Kopf der Tabelle</li>
+<li><code>tbody</code>: Tabellenkörper; da wo die ganzen Datenzeilen stehen</li>
+<li><code>tr</code>: Tabellenzeile</li>
+<li><code>td</code>: Datumszelle einer Tabelle; also eine einzige Zelle</li>
+</ul>
+<p>Du kannst diesen Code kopieren und selbst ausprobieren.</p>
+</section>
+<section id="attribute" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="attribute"><span class="header-section-number">3.3</span> Attribute</h3>
+<p>Attribute sind gesetzte Eigenschaften eines HTML Elements. Um den Unterschied zu verstehen, verdeutliche Dir das durch die Haarfarbe. Die Haarfarbe ist eine Eigenschaft aber Haarfarbe Schwarz ist eine gesetzte Eigenschaft, die als Attribut bezeichnet wird.</p>
+<p>Die allerwichtigsten Attribute sind einerseits <code>id</code> und andererseits <code>class</code>. Das <code>id</code> Attribut benennt ein HTML Element eindeutig und einmalig. Diese Attribut darf nur einmal vorkommen; zum Beispiel in einer Webseite. Das Attribut <code>class</code> ordnet das HTML Element einer bestimmten Klasse von Objekten zu. Beide Attribute spielen eine überaus wichtige Rolle bei der Funktion von Webseiten. Die Syntax hierzu sieht so aus:</p>
+<div id="lst-attributes" class="html listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-attributes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Listing&nbsp;5: Syntax zur Deklarierung von HTML Elementattributen.
+</figcaption>
+<div aria-describedby="lst-attributes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" data-code-line-numbers=""><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">tag</span><span class="ot"> id</span><span class="op">=</span><span class="st">"ein-einmaliger-name"</span><span class="ot"> class</span><span class="op">=</span><span class="st">"eine-umfassende-klasse"</span><span class="dt">&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    ...</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">tag</span><span class="dt">&gt;</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</figure>
+</div>
+<p>In HTML gibt es viele vorgefertigte Eigenschaften, die als Attribut gesetzt werden können. Darüber hinaus erlaubt HTML auch das setzen von eigenen Eigenschaften, die Du selbst definiert hast.</p>
+</section>
+<section id="einfachtags" class="level3" data-number="3.4">
+<h3 data-number="3.4" class="anchored" data-anchor-id="einfachtags"><span class="header-section-number">3.4</span> Einfachtags</h3>
+<p>Einfachtags stehen für HTML Elemente, die keinen Inhalt haben. Dadurch können Einfachtags nie als Elternelement dienen. Die Grundstruktur ist recht einfach:</p>
+<div id="lst-simple-tags" class="html listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-simple-tags-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Listing&nbsp;6: Grundstruktur eines Einfachtags
+</figcaption>
+<div aria-describedby="lst-simple-tags-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6" data-code-line-numbers=""><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">tag</span><span class="dt">/&gt;</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</figure>
+</div>
+<p>Meistens besitzen aber Einfachtags eine Menge Attribute, die ihre Funktion beschreiben. Ein berühmtes Einfachtag steht für eine eingefügte Bilddatei.</p>
+<div id="lst-img-tag" class="html listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-img-tag-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Listing&nbsp;7: Syntax eines Bildtags
+</figcaption>
+<div aria-describedby="lst-img-tag-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7" data-code-line-numbers=""><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> scr</span><span class="op">=</span><span class="st">"Pfad zur Datei"</span><span class="dt">/&gt;</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</figure>
+</div>
+<p>Hierbei steht <code>src</code> für das englische <em>source</em>; also die Quelle des Bildes. Als Quelle dient ein Dateipfad, der dem Browser zum Beispiel den Ort der Bilddatei mitteilt.</p>
+<p>Ein Sonderbeispiel eines Einfachtags ist das Kommentartag. Es hat die Form</p>
+<div id="lst-tml-comment" class="html listing quarto-float quarto-figure quarto-figure-left anchored">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-tml-comment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Listing&nbsp;8: Syntax eines Kommentartags
+</figcaption>
+<div aria-describedby="lst-tml-comment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8" data-code-line-numbers=""><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- ... --&gt;</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</figure>
+</div>
+<p>Kommentartags werden nicht von einem Browser interpretiert sondern ignoriert. Dadurch sind Kommentare lediglich als Hilfe für den Programmierer gedacht, der sich und anderen Hinweise auf Aufbau, Struktur, und Funktion des Codes aufmerksam macht.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Wichtig
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Achtung. Code wird in der realen Welt viel öfters gelesen als geschrieben. Dadurch haben Kommentare eine unglaublich große Bedeutung in der praktischen Informatik. Sie helfen den Code zu strukturieren, Änderungen anzukündigen, Funktion zu erklären, und vieles andere. Ein aus Faulheit unkommentierter Code ist in der wahren Welt eine Katastrophe.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="programmierstil" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="programmierstil"><span class="header-section-number">4</span> Programmierstil</h2>
+<p>Wie in jeder Programmiersprache, hat auch HTML das traditionelle “Hello World” Programm. Ein Hello World programm zeigt den minimalen Aufwand, um eine Botschaft an den Anwender zu senden. In HTML sieht es so aus:</p>
+<div id="lst-min-website" class="html listing quarto-float quarto-figure quarto-figure-left anchored" data-code-line-numbers="true">
+<figure class="quarto-float quarto-float-lst figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-lst" id="lst-min-website-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Listing&nbsp;9: Das “Hello World!” Programm in HTML
+</figcaption>
+<div aria-describedby="lst-min-website-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9" data-code-line-numbers=""><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb9-1"><a href="#cb9-1"></a><span class="dt">&lt;!DOCTYPE</span> html<span class="dt">&gt;</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="dt">&lt;</span><span class="kw">html</span><span class="dt">&gt;</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a>    <span class="dt">&lt;</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb9-4"><a href="#cb9-4"></a>        <span class="dt">&lt;</span><span class="kw">title</span><span class="dt">&gt;</span>This is a title<span class="dt">&lt;/</span><span class="kw">title</span><span class="dt">&gt;</span></span>
+<span id="cb9-5"><a href="#cb9-5"></a>    <span class="dt">&lt;/</span><span class="kw">head</span><span class="dt">&gt;</span></span>
+<span id="cb9-6"><a href="#cb9-6"></a>    <span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb9-7"><a href="#cb9-7"></a>        <span class="dt">&lt;</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb9-8"><a href="#cb9-8"></a>            <span class="dt">&lt;</span><span class="kw">p</span><span class="dt">&gt;</span>Hello world!<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb9-9"><a href="#cb9-9"></a>        <span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb9-10"><a href="#cb9-10"></a>    <span class="dt">&lt;/</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb9-11"><a href="#cb9-11"></a><span class="dt">&lt;/</span><span class="kw">html</span><span class="dt">&gt;</span></span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</figure>
+</div>
+<p>Zu beachten ist folgendes:</p>
+<ul>
+<li>Korrekter Code in aller erster Linie</li>
+<li>Alle tags sind kleingeschrieben</li>
+<li>Es gibt keine Leerzeilen zwischen den einzelnen Codezeilen. Leerzeilen werden nur dann eingefügt, wenn eine semantische Trennung der einzelnen Dokumentteile erfolg; zum Beispiel Überschrift und Textabsatz</li>
+<li>Einrücken des Codes um vier Freizeichen bei verschachtelten Tags</li>
+<li>Verwendung von Kommentaren</li>
+</ul>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="index_files/libs/quarto-contrib/line-highlight-1.0.0/line-highlight.js" defer="true"></script>
+</body></html>
