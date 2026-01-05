@@ -159,8 +159,9 @@ Wie in jeder Programmiersprache, hat auch HTML das traditionelle "Hello World" P
 
 Zu beachten ist folgendes:
 
-- Korrekter Code in aller erster Linie
+- Korrekter Code in aller erster Linie; das heisst der Code ist ohne Fehler ausführbar
 - Alle tags sind kleingeschrieben
+- Alle Attribute sind kleingeschrieben und durch Minuszeichen getrennt, falls sie aus mehreren Wörtern bestehen
 - Es gibt keine Leerzeilen zwischen den einzelnen Codezeilen. Leerzeilen werden nur dann eingefügt, wenn eine semantische Trennung der einzelnen Dokumentteile erfolg; zum Beispiel Überschrift und Textabsatz
 - Einrücken des Codes um vier Freizeichen bei verschachtelten Tags
 - Verwendung von Kommentaren
