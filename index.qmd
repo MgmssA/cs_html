@@ -157,7 +157,7 @@ Wie in jeder Programmiersprache, hat auch HTML das traditionelle "Hello World" P
 </html>
 ```
 
-Zu beachten ist folgendes:
+Und wie in jeder programmiersprache üblich, werden hier bestimmte Richtlinien an das Aussehen des Codes gestellt. Dadurch das Code viel öfters gelesen als geschrieben wird, erleichtern Programmierstil Richtlinien das Lesen. Zu beachten ist folgendes:
 
 - Korrekter Code in aller erster Linie; das heisst der Code ist ohne Fehler ausführbar
 - Alle tags sind kleingeschrieben
