@@ -103,7 +103,7 @@ Du kannst diesen Code kopieren und selbst ausprobieren.
 
 Attribute sind gesetzte Eigenschaften eines HTML Elements. Um den Unterschied zu verstehen, verdeutliche Dir das durch die Haarfarbe. Die Haarfarbe ist eine Eigenschaft aber Haarfarbe Schwarz ist eine gesetzte Eigenschaft, die als Attribut bezeichnet wird. 
 
-Die allerwichtigsten Attribute sind einerseits `id` und andererseits `class`. Das `id` Attribut benennt ein HTML Element eindeutig und einmalig. Diese Attribut darf nur einmal vorkommen; zum Beispiel in einer Webseite. Das Attribut `class` ordnet das HTML Element einer bestimmten Klasse von Objekten zu. Beide Attribute spielen eine überaus wichtige Rolle bei der Funktion von Webseiten. Die Syntax hierzu sieht so aus:
+Die allerwichtigsten Attribute sind einerseits `id` und andererseits `class`. Das `id` Attribut benennt ein HTML Element eindeutig und einmalig. Diese Attribut darf nur einmal vorkommen; zum Beispiel in einer Webseite. Das Attribut `class` ordnet das HTML Element einer bestimmten Klasse von Objekten zu. Beide Attribute spielen eine überaus wichtige Rolle bei der Funktion von Webseiten. Wenn die Werte der Attribute, also das, was in Anführungszeichen steht, aus mehreren Wörtern besteht, dann werden diese durch ein `-` Minuszeichen getrennt. Die Syntax hierzu sieht so aus:
 
 ```{.html #lst-attributes lst-cap='Syntax zur Deklarierung von HTML Elementattributen.'}
 <tag id="ein-einmaliger-name" class="eine-umfassende-klasse">
