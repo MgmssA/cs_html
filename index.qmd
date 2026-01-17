@@ -21,13 +21,13 @@ Da HTML lediglich die Struktur einer Web Ressource wie eine Webseite beschreibt,
 
 Die Syntax einer Programmiersprache ist ähnlich zu sehen, wie der korrekte Satzbau in der Grammatik einer Sprache. Dadurch, dass Programmiersprachen jedoch kontextfrei sind, ist deren Syntax sehr einfach. Das heisst nicht, dass es nicht genügend Möglichkeiten gibt, wie man sich selber in den Fuss schiesst. Selbst für eine kontextfreie Sprache, brauchst Du etwas Disziplin, um sie korrekt schreiben zu können. 
 
-Die Programmiersprache HTML beschreibt durch HTML Elementen die verschiedenen semantischen Elemente einer Web Ressource. Um ein HTML Element anzugeben, benutzt man einen Tag. Ein tag ist wie ein Etikett, dass ein bestimmtes Element anzeigt. In den folgenden Abschnitte lernst Du einige Syntaxaspekte von HTML kennen. 
+Die Programmiersprache HTML beschreibt durch HTML Elementen die verschiedenen semantischen Elemente einer Web Ressource. Die HTML Elemente kann man sich als Dokumentkomponenten vorstellen; zum Beispiel eine Überschrift, eine Tabelle, oder einen Absatz. Um ein HTML Element anzugeben, benutzt man einen Tag. Ein tag ist wie ein Etikett, dass ein bestimmtes Element anzeigt. In den folgenden Abschnitte lernst Du einige Syntaxaspekte von HTML kennen. 
 
 Viele der nachfolgenden Codebeispiele lassen sich kopieren und in sogenannte Livecoding Umgebungen im WWW verwenden. Eine dieser Livecoding Umgebungen ist zum Beispiel: <https://developer.mozilla.org/en-US/play>. 
 
 ## Tags
 
-Ein Tag ist ein semantischer Name eines HTML Codefragments, dass ein HTML Element einer Web Ressource; also einer Webseite oder eines Dokumentes kodiert.. Es gibt zwei grundsätzliche Arten von Tags. Eine einfache Quelle zur Erklärung der einzelnen Tags ist <https://en.wikipedia.org/wiki/HTML_element#Comments>. Die deutsche Variante ist sehr knapp gehalten.
+Ein Tag ist ein semantischer Name eines HTML Codefragments, dass ein HTML Element einer Web Ressource; also einer Webseite oder eines Dokumentes kodiert. Ein Tag ist kein Element. Es gibt zwei grundsätzliche Arten von Tags. Eine einfache Quelle zur Erklärung der einzelnen Tags ist <https://en.wikipedia.org/wiki/HTML_element#Comments>. Die deutsche Variante ist sehr knapp gehalten.
 
 ### Paartags
 
@@ -157,7 +157,7 @@ Wie in jeder Programmiersprache, hat auch HTML das traditionelle "Hello World" P
 </html>
 ```
 
-Und wie in jeder programmiersprache üblich, werden hier bestimmte Richtlinien an das Aussehen des Codes gestellt. Dadurch das Code viel öfters gelesen als geschrieben wird, erleichtern Programmierstil Richtlinien das Lesen. Zu beachten ist folgendes:
+Und wie in jeder programmiersprache üblich, werden hier bestimmte Richtlinien an das Aussehen des Codes gestellt. Dadurch das Code viel öfters gelesen als geschrieben wird, erleichtern Programmierstil Richtlinien das Lesen. Zu beachten für Deine Programmierarbeit ist folgendes:
 
 - Korrekter Code in aller erster Linie; das heisst der Code ist ohne Fehler ausführbar
 - Alle tags sind kleingeschrieben
